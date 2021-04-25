@@ -1,0 +1,87 @@
+.title {
+  min-width: 100%;
+  height: 944px;
+
+  display: flex;
+
+  color: #fff;
+
+  background: #E5E5E5;
+  background-image: url('~src/assets/img/vsuet.png'); // fallback
+  background: linear-gradient(90deg, rgba(41, 46, 138, 0.9) 0%, rgba(#F33D87, 0.9) 100%), url('~src/assets/img/vsuet.png');
+}
+
+.title-left {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-left: 100px;
+  padding-right: 50px;
+
+  p {
+    position: relative;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h4 {
+    max-width: 675px;
+
+    font-size: 54px;
+    line-height: 86px;
+    font-weight: 700;
+  }
+}
+
+.title-right {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 100px;
+  margin-right: 55px;
+
+  img {
+    max-width: 809px;
+  }
+}
+
+@media (max-width: 1794px) {
+  .title-left {
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  .title-right {
+    padding-left: 60px;
+    margin-right: 40px;
+    img {
+      max-width: 700px;
+    }
+  }
+}
+
+@media (max-width: 1687px) {
+  .title-right {
+    img {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 1547px) {
+  .title-left {
+    h4 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+}
