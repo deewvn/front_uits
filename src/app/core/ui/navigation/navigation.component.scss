@@ -1,0 +1,147 @@
+.navigation-wrapper {
+  position: absolute;
+
+  width: calc(100% - 100px);
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 40px;
+
+  z-index: 99;
+}
+
+.navigation__list {
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+}
+
+.navigation__link {
+  display: flex;
+
+  margin-right: 75px;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #4c52de;
+  }
+}
+
+.navigation__arrows {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  img {
+    &:first-child {
+      position: absolute;
+      right: -3px;
+      opacity: 0;
+
+      transition-duration: 0.2s;
+    }
+  }
+  &:hover {
+    img {
+      &:first-child {
+        transform: translateX(17px);
+        opacity: 1;
+        //animation-name: show-arrow;
+        //animation-duration: 0.2s;
+        //animation-fill-mode: forwards;
+        //animation-iteration-count: 1;
+      }
+    }
+  }
+}
+
+@keyframes show-arrow {
+  0% {
+    right: 0;
+    opacity: 0
+  }
+  100% {
+    right: -30px;
+    opacity: 1
+  }
+}
+
+@media (max-width: 1674px) {
+  .navigation-wrapper {
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+
+  .navigation__link {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigation__link {
+    margin-right: 40px;
+
+    font-size: 21px;
+  }
+  .navigation__logo {
+    img {
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation-wrapper {
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  .navigation__link {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .navigation__logo {
+    img {
+      width: 120px;
+    }
+  }
+}
+
+@media (max-width: 1015px) {
+  .navigation__link {
+    margin-right: 15px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 950px) {
+  .navigation-wrapper {
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  .navigation__link {
+    font-size: 13px;
+  }
+  .navigation__logo {
+    img {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation__list {
+    display: none;
+  }
+}
