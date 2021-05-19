@@ -1,0 +1,49 @@
+.for-applicants {
+  padding: 230px 200px 88px;
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      margin: 0 10px;
+      padding: 40px 20px;
+
+      border: 2px solid #E7EDF8;
+      box-sizing: border-box;
+      box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+      border-radius: 3px;
+      transition: 0.2s;
+
+      h4 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38px;
+        color: #11145D;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #333333;
+      }
+    }
+  }
+}

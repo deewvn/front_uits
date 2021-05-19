@@ -13,6 +13,7 @@ import { StudentLifeComponent } from './modules/main/components/student-life/stu
 import { PartnersComponent } from './modules/main/components/partners/partners.component';
 import { NavigationComponent } from './core/ui/navigation/navigation.component';
 import { FooterComponent } from './core/ui/footer/footer.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FooterComponent } from './core/ui/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    IvyCarouselModule,
     AppRoutingModule
   ],
   providers: [],

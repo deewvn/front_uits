@@ -40,6 +40,22 @@ body * {
   }
 }
 
+.section-header {
+  position: relative;
+  margin: 0 0 80px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 76px;
+}
+
+.section-header.underline {
+  &::after {
+    background: #000000;
+  }
+}
+
 /** =================== MONTSERRAT =================== **/
 
 /** Montserrat Thin **/

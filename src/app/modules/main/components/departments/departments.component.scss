@@ -1,0 +1,98 @@
+.departments {
+  height: 968px;
+  padding: 88px 168px 88px;
+
+  background-color: #E7EDF8;
+
+  ::ng-deep .carousel-cells, ::ng-deep .carousel-container {
+    position: relative;
+    height: 650px !important;
+  }
+
+  .carousel {
+    &-cell {
+      max-width: 375px;
+      height: 574px;
+
+      padding-left: 32px;
+
+      background-color: #ffffff;
+      border: 2px solid #E7EDF8;
+      box-sizing: border-box;
+      box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+      border-radius: 3px;
+
+      div {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      h3 {
+        margin: 0;
+
+        font-style: normal;
+        font-weight: 200;
+        font-size: 105px;
+        line-height: 168px;
+
+        color: #F33D87;
+      }
+
+      h4 {
+        max-width: 270px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 32px;
+
+        color: #11145D;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+
+      a {
+        position: absolute;
+        bottom: 45px;
+        left: 32px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #F33D87;
+      }
+    }
+
+    ::ng-deep .carousel-dot {
+      display: none !important;
+      border-color: #F33D87 !important;
+      &:first-child,
+      &:nth-child(2){
+        display: inline-block !important;
+      }
+    }
+
+    ::ng-deep .carousel-dot.carousel-dot-active {
+      background-color: #F33D87 !important;
+    }
+  }
+}
