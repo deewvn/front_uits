@@ -1,0 +1,56 @@
+.feedback {
+  height: 701px;
+  padding: 88px 150px 88px;
+
+  background-color: #ffffff;
+
+  ::ng-deep .carousel-cells, ::ng-deep .carousel-container {
+    position: relative;
+    height: 473px !important;
+  }
+
+  .carousel-cell {
+    p {
+      position: relative;
+
+      height: 357px;
+      border: 1px solid #E7EDF8;
+
+      box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+    }
+    p:after, p:before {
+      top: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    p:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #ffffff;
+      border-width: 18px;
+      left: 50%;
+      margin-left: -18px;
+    }
+    p:before {
+      border-color: rgba(125, 145, 133, 0);
+      border-top-color: #E7EDF8;
+      border-width: 19px;
+      left: 50%;
+      margin-left: -19px;
+    }
+  }
+
+  ::ng-deep .carousel-dot {
+    background-color: #E7EDF8 !important;
+    border-color: #E7EDF8 !important;
+  }
+
+  ::ng-deep .carousel-dot.carousel-dot-active {
+    background-color: #292E8A !important;
+    border-color: #292E8A !important;
+  }
+}
