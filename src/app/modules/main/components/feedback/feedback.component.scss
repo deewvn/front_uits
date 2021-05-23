@@ -4,21 +4,100 @@
 
   background-color: #ffffff;
 
-  ::ng-deep .carousel-cells, ::ng-deep .carousel-container {
+  ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
     position: relative;
-    height: 473px !important;
+    height: 523px !important;
+  }
+
+  ::ng-deep .carousel-arrow {
+    box-shadow: none !important;
+    bottom: -7px !important;
+    top: unset !important;
+  }
+
+  ::ng-deep .carousel-arrow-prev {
+    left: 45% !important;
+  }
+
+  ::ng-deep .carousel-arrow-next {
+    right: 45% !important;
   }
 
   .carousel-cell {
-    p {
+
+    display: flex;
+    justify-content: center;
+
+    .feedback-wrapper {
+      display: flex;
+      flex-direction: column;
+
       position: relative;
 
-      height: 357px;
+      max-height: 357px;
+      max-width: 1133px;
+
+      padding: 42px 79px;
+
       border: 1px solid #E7EDF8;
 
       box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+
+      h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 24px;
+        letter-spacing: 0.9px;
+
+        color: #11145D;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+
+      .feedback-photo {
+        position: absolute;
+        width: 187px;
+        top: 0px;
+        left: -150px;
+      }
+
+      .feedback-stars {
+        position: absolute;
+
+        bottom: 27px;
+
+        img {
+          width: 24px;
+
+          margin-right: 8px;
+        }
+      }
     }
-    p:after, p:before {
+
+    .feedback-wrapper:after, .feedback-wrapper:before {
       top: 100%;
       border: solid transparent;
       content: " ";
@@ -28,14 +107,14 @@
       pointer-events: none;
     }
 
-    p:after {
+    .feedback-wrapper:after {
       border-color: rgba(255, 255, 255, 0);
       border-top-color: #ffffff;
       border-width: 18px;
       left: 50%;
       margin-left: -18px;
     }
-    p:before {
+    .feedback-wrapper:before {
       border-color: rgba(125, 145, 133, 0);
       border-top-color: #E7EDF8;
       border-width: 19px;

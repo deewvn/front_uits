@@ -1,0 +1,25 @@
+.footer {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+
+  padding: 88px 150px 88px;
+
+  background-color: #FAFBFE;
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+
+    a, p {
+      margin: 7px;
+      margin-left: 124px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: #333333;
+
+      text-decoration: none;
+    }
+  }
+}

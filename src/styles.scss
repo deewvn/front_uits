@@ -40,7 +40,24 @@ body * {
   }
 }
 
+.round {
+  &::before {
+    content: '';
+
+    min-width: 24px;
+    min-height: 24px;
+
+    margin-right: 100px;
+
+    background-color: #292E8A;
+    border-radius: 50%;
+  }
+}
+
 .section-header {
+  display: flex;
+  align-items: center;
+
   position: relative;
   margin: 0 0 80px;
 

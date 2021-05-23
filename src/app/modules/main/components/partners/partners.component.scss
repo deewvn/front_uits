@@ -1,0 +1,40 @@
+.partners {
+  height: 701px;
+  padding: 88px 150px 88px;
+
+  background-color: #ffffff;
+
+  .partners-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+
+    &__item {
+      padding: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #FFFFFF;
+
+      border: 2px solid #E7EDF8;
+      box-sizing: border-box;
+
+      box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+      border-radius: 3px;
+      cursor: pointer;
+
+      img {
+        width: 154px;
+        opacity: 0.3;
+      }
+
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
