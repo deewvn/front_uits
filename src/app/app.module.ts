@@ -14,6 +14,11 @@ import { PartnersComponent } from './modules/main/components/partners/partners.c
 import { NavigationComponent } from './core/ui/navigation/navigation.component';
 import { FooterComponent } from './core/ui/footer/footer.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { IusComponent } from './modules/ius/ius.component';
+import { IbComponent } from './modules/ib/ib.component';
+import { VmitComponent } from './modules/vmit/vmit.component';
+import { KisComponent } from './modules/kis/kis.component';
+import { IusTitleComponent } from './modules/ius/components/ius-title/ius-title.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     StudentLifeComponent,
     PartnersComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    IusComponent,
+    IbComponent,
+    VmitComponent,
+    KisComponent,
+    IusTitleComponent
   ],
   imports: [
     BrowserModule,

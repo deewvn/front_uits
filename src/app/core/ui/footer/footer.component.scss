@@ -20,6 +20,16 @@
 
       text-decoration: none;
     }
+
+    .social {
+      display: flex;
+
+      margin-left: 124px;
+      a {
+        margin-left: 0;
+        margin-right: 26px;
+      }
+    }
   }
 
   &-form {

@@ -28,11 +28,13 @@
       img {
         width: 154px;
         opacity: 0.3;
+        filter: sepia(100%) hue-rotate(200deg) saturate(500%);
       }
 
       &:hover {
         img {
           opacity: 1;
+          filter: unset;
         }
       }
     }
