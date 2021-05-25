@@ -32,9 +32,28 @@
   font-size: 19px;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   &:hover {
-    color: #4c52de;
+    color: #292E8A;
   }
+}
+
+.navigation-wrapper.relative {
+  position: relative;
+  margin-bottom: 32px;
+
+  .navigation__link {
+    color: #C4C4C4;
+
+    &:hover {
+      color: #292E8A;
+    }
+  }
+}
+
+.navigation__link.active {
+  color: #292E8A !important;
 }
 
 .navigation__arrows {

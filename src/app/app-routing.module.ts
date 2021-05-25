@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { MainComponent } from './modules/main/main.component';
-import {IusComponent} from './modules/ius/ius.component';
-import {IbComponent} from './modules/ib/ib.component';
-import {VmitComponent} from './modules/vmit/vmit.component';
+import { IusComponent } from './modules/ius/ius.component';
+import { IbComponent } from './modules/ib/ib.component';
+import { VmitComponent } from './modules/vmit/vmit.component';
+import {KisComponent} from "./modules/kis/kis.component";
 
 const routes: Routes = [
   {
@@ -14,7 +15,13 @@ const routes: Routes = [
       {
         path: '',
         component: MainComponent
-      },
+      }
+    ]
+  },
+  {
+    path: 'departments',
+    component: LayoutComponent,
+    children: [
       {
         path: 'ius',
         component: IusComponent
@@ -29,7 +36,12 @@ const routes: Routes = [
       },
       {
         path: 'kis',
-        component: MainComponent
+        component: KisComponent
+      },
+      {
+        path: '',
+        redirectTo: 'ius',
+        pathMatch: 'full'
       }
     ]
   }

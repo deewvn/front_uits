@@ -1,22 +1,22 @@
-<div class="navigation-wrapper">
+<div class="navigation-wrapper" [ngClass]="{'relative': !isRoot}">
   <div class="navigation__logo">
-    <a href="/"><img src="/assets/img/logo.svg" width="90px" alt=" "/></a>
+    <a href="/"><img [src]="isRoot ? '/assets/img/logo.svg' : '/assets/img/logo-colored.png'" width="90px" alt=" "/></a>
   </div>
   <ul class="navigation__list">
     <li class="navigation__item">
-      <a routerLink="" class="navigation__link">Абитуриентам</a>
+      <a (click)="goTo($event,'applicants')" [class.active]="isActive('applicants')" class="navigation__link">Абитуриентам</a>
     </li>
     <li class="navigation__item">
-      <a routerLink="" class="navigation__link">Кафедры</a>
+      <a (click)="goTo($event,'departments')" [class.active]="isActive('departments')" class="navigation__link">Кафедры</a>
     </li>
     <li class="navigation__item">
       <a routerLink="" class="navigation__link">Где и как учиться</a>
     </li>
     <li class="navigation__item">
-      <a routerLink="" class="navigation__link">Контакты</a>
+      <a (click)="goTo($event,'contacts')" class="navigation__link">Контакты</a>
     </li>
     <li class="navigation__item">
-      <a routerLink="" class="navigation__link"><img src="/assets/img/search_btn.svg" width="17px" alt=" "/></a>
+      <a routerLink="" class="navigation__link"><img [src]="isRoot ? '/assets/img/search_btn.svg' : '/assets/img/search_btn-colored.svg'" width="17px" alt=" "/></a>
     </li>
   </ul>
 </div>

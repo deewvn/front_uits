@@ -10,7 +10,7 @@ import { DepartmentsComponent } from './modules/main/components/departments/depa
 import { ForApplicantsComponent } from './modules/main/components/for-applicants/for-applicants.component';
 import { FeedbackComponent } from './modules/main/components/feedback/feedback.component';
 import { StudentLifeComponent } from './modules/main/components/student-life/student-life.component';
-import { PartnersComponent } from './modules/main/components/partners/partners.component';
+import { PartnersComponent } from './shared/components/partners/partners.component';
 import { NavigationComponent } from './core/ui/navigation/navigation.component';
 import { FooterComponent } from './core/ui/footer/footer.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
@@ -18,7 +18,9 @@ import { IusComponent } from './modules/ius/ius.component';
 import { IbComponent } from './modules/ib/ib.component';
 import { VmitComponent } from './modules/vmit/vmit.component';
 import { KisComponent } from './modules/kis/kis.component';
-import { IusTitleComponent } from './modules/ius/components/ius-title/ius-title.component';
+import { DepartmentTitleComponent } from './shared/components/department-title/department-title.component';
+import { MiniGalleryComponent } from './shared/components/mini-gallery/mini-gallery.component';
+import { DepartmentAboutComponent } from './shared/components/department-about/department-about.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { IusTitleComponent } from './modules/ius/components/ius-title/ius-title.
     IbComponent,
     VmitComponent,
     KisComponent,
-    IusTitleComponent
+    DepartmentTitleComponent,
+    MiniGalleryComponent,
+    DepartmentAboutComponent
   ],
   imports: [
     BrowserModule,

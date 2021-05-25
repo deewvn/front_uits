@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  partnerList = [
+    '/assets/img/dataart.png',
+    '/assets/img/angelsit.png',
+    '/assets/img/atos.png',
+    '/assets/img/siemens.png',
+    '/assets/img/gazprom.png',
+    '/assets/img/efko.png',
+    '/assets/img/baltika.png',
+    '/assets/img/ekoniva.png',
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
