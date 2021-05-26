@@ -1,0 +1,54 @@
+.mini-gallery {
+  padding: 88px 150px 88px;
+
+  background-color: #E7EDF8;
+
+  ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+    position: relative;
+    height: 510px !important;
+  }
+
+  ::ng-deep .carousel-arrow {
+    box-shadow: none !important;
+    bottom: -7px !important;
+    top: unset !important;
+
+    background-color: transparent !important;
+  }
+
+  ::ng-deep .carousel-arrow-prev {
+    left: 40% !important;
+  }
+
+  ::ng-deep .carousel-arrow-next {
+    right: 40% !important;
+  }
+
+  ::ng-deep .carousel-dot {
+    background-color: #F8CEDF !important;
+    border-color: #F8CEDF !important;
+  }
+
+  ::ng-deep .carousel-dot.carousel-dot-active {
+    background-color: #F33D87 !important;
+    border-color: #F33D87 !important;
+  }
+
+  .cell-data {
+    display: flex;
+    flex-direction: column;
+
+    height: 450px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E7EDF8;
+    box-sizing: border-box;
+
+    box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
+
+    .photo {
+      object-fit: cover;
+    }
+  }
+}

@@ -21,6 +21,7 @@ import { KisComponent } from './modules/kis/kis.component';
 import { DepartmentTitleComponent } from './shared/components/department-title/department-title.component';
 import { MiniGalleryComponent } from './shared/components/mini-gallery/mini-gallery.component';
 import { DepartmentAboutComponent } from './shared/components/department-about/department-about.component';
+import { DepartmentAreasComponent } from './shared/components/department-areas/department-areas.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { DepartmentAboutComponent } from './shared/components/department-about/d
     KisComponent,
     DepartmentTitleComponent,
     MiniGalleryComponent,
-    DepartmentAboutComponent
+    DepartmentAboutComponent,
+    DepartmentAreasComponent
   ],
   imports: [
     BrowserModule,

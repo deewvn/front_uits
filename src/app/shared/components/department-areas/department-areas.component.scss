@@ -1,0 +1,72 @@
+.department-areas {
+  padding: 88px 150px 88px;
+
+  background-color: #FFFFFF;
+
+  .area-row {
+    display: grid;
+    grid-template-columns: calc((100% - 300px) / 2) 70px calc((100% - 300px) / 2);
+    //align-items: start;
+
+    .number {
+      margin: 0;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 64px;
+
+
+      color: #F33D87;
+    }
+
+    .text {
+      h3 {
+        margin-bottom: 2px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+
+      h4 {
+        margin: 0 0 20px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38px;
+
+        color: #11145D;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-child(2n) {
+      img {
+        margin-left: -50px;
+      }
+    }
+  }
+}

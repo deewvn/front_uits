@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 })
 export class DepartmentAboutComponent implements OnInit {
   @Input() description: string;
+  @Input() head: string;
+  @Input() photo: string;
 
   constructor() { }
 
