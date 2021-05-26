@@ -3,19 +3,9 @@
     Наша кафедра
   </h4>
   <carousel class="carousel" cellsToShow="3" [margin]="20" [cellWidth]="375" [dots]="true" [arrows]="false">
-    <div class="carousel-cell">
+    <div class="carousel-cell" *ngFor="let img of images">
       <div class="cell-data">
-        <img class="photo" src="/assets/img/ius-life1.png"/>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="cell-data">
-        <img class="photo" src="/assets/img/ius-life2.png"/>
-      </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="cell-data">
-        <img class="photo" src="/assets/img/ius-life3.png"/>
+        <img class="photo" src="{{ img }}"/>
       </div>
     </div>
   </carousel>

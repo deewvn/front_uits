@@ -5,7 +5,7 @@ import { MainComponent } from './modules/main/main.component';
 import { IusComponent } from './modules/ius/ius.component';
 import { IbComponent } from './modules/ib/ib.component';
 import { VmitComponent } from './modules/vmit/vmit.component';
-import {KisComponent} from "./modules/kis/kis.component";
+import { KisComponent } from './modules/kis/kis.component';
 
 const routes: Routes = [
   {
@@ -36,6 +36,10 @@ const routes: Routes = [
       },
       {
         path: 'kis',
+        component: KisComponent
+      },
+      {
+        path: 'ukmt',
         component: KisComponent
       },
       {

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PartnersComponent implements OnInit {
 
   @Input() partners: string[];
+  @Input() title: string;
 
   constructor() { }
 

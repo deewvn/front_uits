@@ -22,6 +22,12 @@ export class IusComponent implements OnInit {
   aboutHead = 'Хаустов Игорь Анатольевич';
   aboutPhoto = '/assets/img/haustov.png';
 
+  galleryImgs = [
+    '/assets/img/ius-life1.png',
+    '/assets/img/ius-life2.png',
+    '/assets/img/ius-life3.png',
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
