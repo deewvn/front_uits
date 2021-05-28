@@ -74,6 +74,45 @@ body * {
   }
 }
 
+@media (max-width: 1650px) {
+  .section-header {
+    font-size: 40px;
+    line-height: 68px;
+  }
+
+  .round {
+    &::before {
+      min-width: 20px;
+      min-height: 20px;
+
+      margin-right: 70px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-header {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .round {
+    &::before {
+      min-width: 15px;
+      min-height: 15px;
+
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-header {
+    font-size: 27px;
+    line-height: 46px;
+  }
+}
+
 /** =================== MONTSERRAT =================== **/
 
 /** Montserrat Thin **/

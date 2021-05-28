@@ -27,6 +27,7 @@
 
     display: flex;
     justify-content: center;
+    width: calc(100% - 20px) !important;
 
     .feedback-wrapper {
       display: flex;
@@ -80,7 +81,7 @@
       .feedback-photo {
         position: absolute;
         width: 187px;
-        top: 0px;
+        top: 0;
         left: -150px;
       }
 
@@ -131,5 +132,131 @@
   ::ng-deep .carousel-dot.carousel-dot-active {
     background-color: #292E8A !important;
     border-color: #292E8A !important;
+  }
+}
+
+@media (max-width: 1870px) {
+ .feedback {
+   .carousel-cell {
+     .feedback-wrapper {
+       max-width: 900px;
+     }
+   }
+ }
+}
+
+@media (max-width: 1650px) {
+  .feedback {
+    padding: 180px 120px 60px;
+    .carousel-cell {
+      .feedback-wrapper {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1490px) {
+  .feedback {
+    .carousel-cell {
+      .feedback-wrapper {
+        max-width: 600px;
+
+        h4 {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1342px) {
+  .feedback {
+    padding: 150px 100px 60px;
+    .carousel-cell {
+      .feedback-wrapper {
+        max-width: 550px;
+      }
+    }
+    ::ng-deep .carousel-arrow-prev {
+      left: 15% !important;
+    }
+
+    ::ng-deep .carousel-arrow-next {
+      right: 15% !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    padding: 120px 70px 50px;
+    .carousel-cell {
+      .feedback-wrapper {
+        max-width: 100%;
+        .feedback-photo {
+          position: absolute;
+          width: 187px;
+          top: 0;
+          left: 30px;
+          grid-row: 1;
+        }
+        h3, h4, p, div {
+          padding-left: 187px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .feedback {
+    .carousel-cell {
+      .feedback-wrapper {
+        h3 {
+          font-size: 15px;
+          margin: 5px 0;
+        }
+        h4 {
+          font-size: 19px;
+          margin: 5px 0;
+        }
+        p {
+          font-size: 14px;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .feedback {
+    padding: 50px 50px 50px;
+    .carousel-cell {
+      .feedback-wrapper {
+        padding: 25px 25px;
+        .feedback-photo {
+          width: 100px;
+          left: 10px;
+        }
+        h3, h4, p, div {
+          padding-left: 100px;
+
+        }
+        p {
+          overflow-y: auto;
+        }
+        .feedback-stars {
+          bottom: 10px
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .feedback {
+    padding: 50px 20px 50px;
   }
 }
