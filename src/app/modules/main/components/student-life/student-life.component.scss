@@ -40,6 +40,7 @@
     flex-direction: column;
 
     height: 642px;
+    max-width: 500px;
 
     background: #FFFFFF;
 
@@ -49,7 +50,8 @@
     box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
 
     .photo {
-      top: -20px;
+      height: 460px;
+      top: -40px;
     }
 
     .text {
@@ -82,18 +84,74 @@
       opacity: 0.7;
     }
   }
+}
 
-  ::ng-deep .carousel-cells {
-    .carousel-cell:last-child {
-      .cell-data {
-        .photo {
-          top: -30px;
-        }
-        .text {
-          position: relative;
-          top: -20px;
+@media (max-width: 1815px) {
+  .student-life {
+    .cell-data {
+      .photo {
+        top: -30px;
+      }
+    }
+    ::ng-deep .carousel-cells {
+      .carousel-cell:last-child, .carousel-cell:nth-child(2) {
+        .cell-data {
+          .photo {
+            top: -45px;
+          }
+          .text {
+            position: relative;
+            top: -20px;
+          }
         }
       }
     }
+  }
+}
+
+@media (max-width: 1650px) {
+  .student-life {
+    padding: 180px 120px 60px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .student-life {
+    ::ng-deep .carousel-cell {
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+}
+
+@media (max-width: 1342px) {
+  .student-life {
+    padding: 150px 100px 60px;
+
+    ::ng-deep .carousel-arrow-prev {
+      left: 15% !important;
+    }
+
+    ::ng-deep .carousel-arrow-next {
+      right: 15% !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .student-life {
+    padding: 120px 70px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .student-life {
+    padding: 50px 50px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .student-life {
+    padding: 50px 20px 50px;
   }
 }

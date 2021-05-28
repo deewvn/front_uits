@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentLifeComponent implements OnInit {
 
-  constructor() { }
+  cellsToShow = 3;
+
+  constructor() {
+    if (window.innerWidth <= 1420) {
+      this.cellsToShow = 1;
+    }
+  }
 
   ngOnInit(): void {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 1420) {
+        this.cellsToShow = 1;
+      }
+    });
   }
 
 }
