@@ -19,4 +19,25 @@
       <a routerLink="" class="navigation__link"><img [src]="isRoot ? '/assets/img/search_btn.svg' : '/assets/img/search_btn-colored.svg'" width="17px" alt=" "/></a>
     </li>
   </ul>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" (click)="openBurger($event)"/>
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box" id="menu__box">
+      <li class="menu__item">
+        <a (click)="goTo($event,'applicants')" [class.active]="isActive('applicants')" class="navigation__link">Абитуриентам</a>
+      </li>
+      <li class="menu__item">
+        <a (click)="goTo($event,'departments')" [class.active]="isActive('departments')" class="navigation__link">Кафедры</a>
+      </li>
+      <li class="menu__item">
+        <a routerLink="" class="navigation__link">Где и как учиться</a>
+      </li>
+      <li class="menu__item">
+        <a (click)="goTo($event,'contacts')" class="navigation__link">Контакты</a>
+      </li>
+    </ul>
+  </div>
 </div>
