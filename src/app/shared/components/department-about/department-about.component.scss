@@ -56,3 +56,33 @@
     //}
   }
 }
+
+@media (max-width: 1650px) {
+  .department-about {
+    padding: 180px 120px 60px;
+  }
+}
+
+@media (max-width: 1342px) {
+  .department-about {
+    padding: 150px 100px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .department-about {
+    padding: 120px 70px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .department-about {
+    padding: 50px 50px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .department-about {
+    padding: 50px 20px 50px;
+  }
+}

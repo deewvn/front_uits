@@ -88,3 +88,33 @@
     }
   }
 }
+
+@media (max-width: 1650px) {
+  .department-areas {
+    padding: 180px 120px 60px;
+  }
+}
+
+@media (max-width: 1342px) {
+  .department-areas {
+    padding: 150px 100px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .department-areas {
+    padding: 120px 70px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .department-areas {
+    padding: 50px 50px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .department-areas {
+    padding: 50px 20px 50px;
+  }
+}

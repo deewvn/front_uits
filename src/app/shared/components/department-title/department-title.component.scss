@@ -40,3 +40,33 @@
     margin-left: 168px;
   }
 }
+
+@media (max-width: 1650px) {
+  .department-title {
+    padding: 180px 120px 60px;
+  }
+}
+
+@media (max-width: 1342px) {
+  .department-title {
+    padding: 150px 100px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .department-title {
+    padding: 120px 70px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .department-title {
+    padding: 50px 50px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .department-title {
+    padding: 50px 20px 50px;
+  }
+}

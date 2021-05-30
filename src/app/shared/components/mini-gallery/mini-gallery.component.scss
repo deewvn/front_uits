@@ -52,3 +52,33 @@
     }
   }
 }
+
+@media (max-width: 1650px) {
+  .mini-gallery {
+    padding: 180px 120px 60px;
+  }
+}
+
+@media (max-width: 1342px) {
+  .mini-gallery {
+    padding: 150px 100px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mini-gallery {
+    padding: 120px 70px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .mini-gallery {
+    padding: 50px 50px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mini-gallery {
+    padding: 50px 20px 50px;
+  }
+}
