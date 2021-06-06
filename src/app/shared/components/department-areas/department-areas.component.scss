@@ -21,6 +21,11 @@
     }
 
     .text {
+      &.right {
+        padding-right: 25px;
+        text-align: right;
+      }
+
       h3 {
         margin-bottom: 2px;
 

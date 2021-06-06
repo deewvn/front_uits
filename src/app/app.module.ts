@@ -22,6 +22,7 @@ import { DepartmentTitleComponent } from './shared/components/department-title/d
 import { MiniGalleryComponent } from './shared/components/mini-gallery/mini-gallery.component';
 import { DepartmentAboutComponent } from './shared/components/department-about/department-about.component';
 import { DepartmentAreasComponent } from './shared/components/department-areas/department-areas.component';
+import { UkmtComponent } from './modules/ukmt/ukmt.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DepartmentAreasComponent } from './shared/components/department-areas/d
     DepartmentTitleComponent,
     MiniGalleryComponent,
     DepartmentAboutComponent,
-    DepartmentAreasComponent
+    DepartmentAreasComponent,
+    UkmtComponent
   ],
   imports: [
     BrowserModule,

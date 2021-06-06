@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-vmit',
-  templateUrl: './vmit.component.html',
-  styleUrls: ['./vmit.component.scss']
+  selector: 'app-ukmt',
+  templateUrl: './ukmt.component.html',
+  styleUrls: ['./ukmt.component.scss']
 })
-export class VmitComponent implements OnInit {
+export class UkmtComponent implements OnInit {
 
   partnersList = [
     '/assets/img/dataart.png',

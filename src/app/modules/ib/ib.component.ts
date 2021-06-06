@@ -28,7 +28,6 @@ export class IbComponent implements OnInit {
     '/assets/img/ib-life3.png',
   ];
 
-
   constructor() { }
 
   ngOnInit(): void {
