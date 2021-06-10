@@ -23,6 +23,7 @@ import { MiniGalleryComponent } from './shared/components/mini-gallery/mini-gall
 import { DepartmentAboutComponent } from './shared/components/department-about/department-about.component';
 import { DepartmentAreasComponent } from './shared/components/department-areas/department-areas.component';
 import { UkmtComponent } from './modules/ukmt/ukmt.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { UkmtComponent } from './modules/ukmt/ukmt.component';
   imports: [
     BrowserModule,
     IvyCarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
