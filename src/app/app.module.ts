@@ -24,6 +24,7 @@ import { DepartmentAboutComponent } from './shared/components/department-about/d
 import { DepartmentAreasComponent } from './shared/components/department-areas/department-areas.component';
 import { UkmtComponent } from './modules/ukmt/ukmt.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IvyCarouselModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

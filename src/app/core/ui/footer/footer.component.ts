@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import {FooterService} from '../../../shared/services/footer.service';
+import { FooterService } from '../../../shared/services/footer.service';
 
 @Component({
   selector: 'app-footer',
