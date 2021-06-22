@@ -375,4 +375,27 @@
      }
    }
   }
+
+  .feedback {
+    height: 951px;
+
+    ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+      height: 753px !important;
+    }
+    .carousel-cell {
+      .feedback-wrapper {
+        max-height: 640px;
+      }
+    }
+  }
+}
+
+@media (max-width: 668px) {
+  :host {
+    ::ng-deep {
+       .round {
+        align-items: baseline;
+      }
+    }
+  }
 }

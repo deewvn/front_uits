@@ -166,3 +166,14 @@
     }
   }
 }
+
+@media (max-width: 411px) {
+  :host {
+    ::ng-deep {
+      .round {
+        align-items: baseline;
+      }
+    }
+  }
+}
+
