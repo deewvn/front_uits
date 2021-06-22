@@ -26,6 +26,7 @@
     </label>
 
     <ul class="menu__box" id="menu__box">
+      <img [src]="'/assets/img/logo-colored.png'" width="70px" alt=" "/>
       <li class="menu__item">
         <a (click)="goTo($event,'applicants')" [class.active]="isActive('applicants')" class="navigation__link">Абитуриентам</a>
       </li>
@@ -38,6 +39,14 @@
       <li class="menu__item">
         <a (click)="goTo($event,'contacts')" class="navigation__link">Контакты</a>
       </li>
+      <div class="contacts">
+        <a href="tel:+7(473) 255 42 67">+7 (473) 255 42 67</a>
+        <div class="social">
+          <a href=""><img src="/assets/img/vk.png" alt="vk"/></a>
+          <a href=""><img src="/assets/img/inst.png" alt="instagram"/></a>
+          <a href=""><img src="/assets/img/fb.png" alt="facebook"/></a>
+        </div>
+      </div>
     </ul>
   </div>
 </div>

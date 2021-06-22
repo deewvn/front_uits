@@ -88,6 +88,37 @@
 
 .hamburger-menu {
   display: none;
+
+  img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .contacts {
+    margin-top: 100px;
+    a {
+      color: #8A97A1;
+      text-decoration: none;
+    }
+    img {
+      position: unset;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      a {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
 }
 
 #menu__toggle {
