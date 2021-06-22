@@ -22,11 +22,12 @@
   align-items: flex-start;
   justify-content: center;
 
-  padding-left: 100px;
+  padding-left: 170px;
   padding-right: 50px;
 
   p {
-    position: relative;
+    display: flex;
+    align-items: center;
 
     font-size: 16px;
     line-height: 20px;
@@ -52,6 +53,8 @@
   margin-right: 55px;
 
   img {
+    position: relative;
+    top: 100px;
     max-width: 809px;
   }
 }
@@ -99,6 +102,12 @@
       }
     }
   }
+}
+
+:host ::ng-deep .round::before {
+  margin-right: 26px;
+
+  background-color: #FFFFFF;
 }
 
 @media (max-width: 1794px) {

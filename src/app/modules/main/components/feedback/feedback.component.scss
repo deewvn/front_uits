@@ -1,12 +1,14 @@
 .feedback {
-  height: 701px;
+  position: relative;
+
+  height: 501px;
   padding: 88px 150px 88px;
 
   background-color: #ffffff;
 
   ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
     position: relative;
-    height: 523px !important;
+    height: 373px !important;
   }
 
   ::ng-deep .carousel-arrow {
@@ -16,10 +18,12 @@
   }
 
   ::ng-deep .carousel-arrow-prev {
+    background-image: url('/assets/img/arrow-blue-left.png') !important;
     left: 45% !important;
   }
 
   ::ng-deep .carousel-arrow-next {
+    background-image: url('/assets/img/arrow-blue.png') !important;
     right: 45% !important;
   }
 
@@ -35,7 +39,7 @@
 
       position: relative;
 
-      max-height: 357px;
+      max-height: 200px;
       max-width: 1133px;
 
       padding: 42px 79px;
@@ -45,6 +49,8 @@
       box-shadow: 0 3px 4px rgba(230, 236, 249, 0.5);
 
       h3 {
+        margin: 0 0 10px;
+
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -58,6 +64,8 @@
       }
 
       h4 {
+        margin: 0;
+
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
@@ -68,6 +76,8 @@
       }
 
       p {
+        margin-top: 20px;
+
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -80,7 +90,10 @@
 
       .feedback-photo {
         position: absolute;
+
+        margin-top: 45px;
         width: 187px;
+        height: auto;
         top: 0;
         left: -150px;
       }
@@ -132,6 +145,32 @@
   ::ng-deep .carousel-dot.carousel-dot-active {
     background-color: #292E8A !important;
     border-color: #292E8A !important;
+  }
+
+  a {
+    position: absolute;
+    bottom: 55px;
+    right: 304px;
+
+    padding: 5px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #F33D87;
+    cursor: pointer;
+
+    z-index: 9999;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

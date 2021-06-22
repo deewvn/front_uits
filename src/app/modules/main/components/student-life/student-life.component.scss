@@ -2,7 +2,7 @@
   //height: 968px;
   padding: 88px 150px 88px;
 
-  background-color: #E7EDF8;
+  background-color: #FAFBFE;
 
   ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
     position: relative;
@@ -15,13 +15,16 @@
     top: unset !important;
 
     background-color: transparent !important;
+    cursor: pointer;
   }
 
   ::ng-deep .carousel-arrow-prev {
+    background-image: url('/assets/img/arrow-left.png') !important;
     left: 40% !important;
   }
 
   ::ng-deep .carousel-arrow-next {
+    background-image: url('/assets/img/arrow-right.png') !important;
     right: 40% !important;
   }
 
