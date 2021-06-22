@@ -364,3 +364,15 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .feedback {
+   .carousel-cell {
+     .feedback-wrapper {
+       p {
+         font-size: 12px;
+       }
+     }
+   }
+  }
+}
