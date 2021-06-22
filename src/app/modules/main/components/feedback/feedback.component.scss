@@ -19,12 +19,12 @@
 
   ::ng-deep .carousel-arrow-prev {
     background-image: url('/assets/img/arrow-blue-left.png') !important;
-    left: 45% !important;
+    left: 40% !important;
   }
 
   ::ng-deep .carousel-arrow-next {
     background-image: url('/assets/img/arrow-blue.png') !important;
-    right: 45% !important;
+    right: 40% !important;
   }
 
   .carousel-cell {
@@ -174,10 +174,18 @@
   }
 }
 
-@media (max-width: 1870px) {
+@media (max-width: 1874px) {
  .feedback {
+
+   height: 551px;
+
+   ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+     position: relative;
+     height: 423px !important;
+   }
    .carousel-cell {
      .feedback-wrapper {
+       max-height: 250px;
        max-width: 900px;
      }
    }
@@ -186,7 +194,7 @@
 
 @media (max-width: 1650px) {
   .feedback {
-    padding: 180px 120px 60px;
+    padding: 80px 120px 60px;
     .carousel-cell {
       .feedback-wrapper {
         max-width: 800px;
@@ -197,6 +205,19 @@
 
 @media (max-width: 1490px) {
   .feedback {
+
+    height: 601px;
+
+    ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+      position: relative;
+      height: 473px !important;
+    }
+    .carousel-cell {
+      .feedback-wrapper {
+        max-height: 300px;
+      }
+    }
+
     .carousel-cell {
       .feedback-wrapper {
         max-width: 600px;
@@ -211,7 +232,7 @@
 
 @media (max-width: 1342px) {
   .feedback {
-    padding: 150px 100px 60px;
+    padding: 60px 100px 60px;
     .carousel-cell {
       .feedback-wrapper {
         max-width: 550px;
@@ -224,12 +245,33 @@
     ::ng-deep .carousel-arrow-next {
       right: 15% !important;
     }
+    a {
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      text-align: center;
+    }
   }
 }
 
 @media (max-width: 1200px) {
   .feedback {
-    padding: 120px 70px 50px;
+    padding: 50px 70px 50px;
+
+    height: 631px;
+
+    ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+      position: relative;
+      height: 503px !important;
+    }
+    .carousel-cell {
+      .feedback-wrapper {
+        max-height: 330px;
+      }
+    }
+
     .carousel-cell {
       .feedback-wrapper {
         max-width: 100%;
@@ -272,6 +314,19 @@
 @media (max-width: 850px) {
   .feedback {
     padding: 50px 50px 50px;
+
+    height: 761px;
+
+    ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+      position: relative;
+      height: 613px !important;
+    }
+    .carousel-cell {
+      .feedback-wrapper {
+        max-height: 440px;
+      }
+    }
+
     .carousel-cell {
       .feedback-wrapper {
         padding: 25px 25px;
@@ -296,6 +351,16 @@
 
 @media (max-width: 550px) {
   .feedback {
-    padding: 50px 20px 50px;
+    padding: 35px 20px 50px;
+    height: 851px;
+
+    ::ng-deep .carousel-cells, ::ng-deep .carousel-container, ::ng-deep .carousel {
+      height: 703px !important;
+    }
+    .carousel-cell {
+      .feedback-wrapper {
+        max-height: 590px;
+      }
+    }
   }
 }
