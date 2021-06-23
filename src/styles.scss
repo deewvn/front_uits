@@ -115,6 +115,12 @@ body * {
   }
 }
 
+@media (max-width: 450px) {
+  .section-header {
+    line-height: 35px;
+  }
+}
+
 /** =================== MONTSERRAT =================== **/
 
 /** Montserrat Thin **/

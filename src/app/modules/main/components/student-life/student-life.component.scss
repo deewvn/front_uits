@@ -157,14 +157,16 @@
   .student-life {
     padding: 35px 20px 50px;
   }
+
+  .student-life {
+    .photo {
+      top: -85px !important;
+    }
+  }
 }
 
 @media (max-width: 375px) {
-  .student-life {
-    .photo {
-      top: -65px !important;
-    }
-  }
+
 }
 
 @media (max-width: 411px) {
