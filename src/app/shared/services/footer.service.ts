@@ -11,7 +11,7 @@ export class FooterService {
   constructor(private http: HttpClient) { }
 
   sendForm(form): Observable<any> {
-    return this.http.post<any>(`https://back.uits-vsuet.ru/api/add`, { form });
+    return this.http.post<any>(`https://back.uits-vsuet.ru/api/add`, form);
   }
 
   getItems(page): Observable<any> {

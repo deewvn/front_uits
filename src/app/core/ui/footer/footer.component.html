@@ -14,16 +14,16 @@
       </div>
     </div>
   </div>
-  <div class="footer-form">
+  <div class="footer-form" [formGroup]="form">
     <div class="line">
-      <input placeholder="Фамилия"/>
-      <input placeholder="Имя">
+      <input formControlName="lastName" placeholder="Фамилия"/>
+      <input formControlName="firstName" placeholder="Имя">
     </div>
     <div class="line">
-      <input placeholder="Номер телефона"/>
-      <input placeholder="E-mail">
+      <input formControlName="phone" placeholder="Номер телефона"/>
+      <input formControlName="email" placeholder="E-mail">
     </div>
-    <input class="questions" placeholder="Остались вопросы?">
+    <input formControlName="question" class="questions" placeholder="Остались вопросы?">
     <button class="btn" (click)="sendForm()">отправить сообщение</button>
     <div class="info">
       <a href="tel:+7(473) 255 42 67">+7 (473) 255 42 67</a>

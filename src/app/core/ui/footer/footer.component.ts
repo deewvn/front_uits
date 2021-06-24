@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FooterService } from '../../../shared/services/footer.service';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-footer',
@@ -8,11 +9,13 @@ import { FooterService } from '../../../shared/services/footer.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  private readonly notifier: NotifierService;
 
   form: FormGroup;
 
   constructor(private builder: FormBuilder,
-              private service: FooterService) {
+              private service: FooterService,
+              private notifierService: NotifierService) {
     this.form = this.builder.group({
       lastName: null,
       firstName: null,
@@ -20,6 +23,7 @@ export class FooterComponent implements OnInit {
       email: null,
       question: null
     });
+    this.notifier = notifierService;
   }
 
   ngOnInit(): void {
@@ -27,10 +31,17 @@ export class FooterComponent implements OnInit {
 
   sendForm(): void {
     if (this.form.valid) {
-      this.service.sendForm(this.form.value).subscribe(res => alert('Успешно'),
-        error => alert('Произошла ошибка'));
+      this.service.sendForm(this.form.value).subscribe(res => {
+          if (res && res.success) {
+            this.notifier.notify('success', 'Успешно! Спасибо за обратную связь, с Вами свяжутся');
+            this.form.reset();
+          } else if (res && !res.success) {
+            this.notifier.notify('error', res.message);
+          }
+        },
+          error => this.notifier.notify('error', 'Произошла ошибка'));
     } else {
-      alert('Заполните форму');
+      this.notifier.notify('error', 'Заполните форму');
     }
   }
 
