@@ -2,9 +2,9 @@
   <div class="department-about__content">
     <div class="text">
       <h4 class="section-header round">
-        О кафедре
+        {{ title }}
       </h4>
-      <p class="subheader">Заведующий кафедрой</p>
+      <p *ngIf="head" class="subheader">Заведующий кафедрой</p>
       <div class="photo-mobile">
         <img src="{{ photo }}" alt=" "/>
       </div>

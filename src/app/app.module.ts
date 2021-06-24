@@ -26,6 +26,7 @@ import { UkmtComponent } from './modules/ukmt/ukmt.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule } from 'angular-notifier';
+import { ProjectsComponent } from './modules/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NotifierModule } from 'angular-notifier';
     MiniGalleryComponent,
     DepartmentAboutComponent,
     DepartmentAreasComponent,
-    UkmtComponent
+    UkmtComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

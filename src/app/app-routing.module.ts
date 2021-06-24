@@ -6,7 +6,8 @@ import { IusComponent } from './modules/ius/ius.component';
 import { IbComponent } from './modules/ib/ib.component';
 import { VmitComponent } from './modules/vmit/vmit.component';
 import { KisComponent } from './modules/kis/kis.component';
-import {UkmtComponent} from "./modules/ukmt/ukmt.component";
+import { UkmtComponent } from './modules/ukmt/ukmt.component';
+import { ProjectsComponent } from './modules/projects/projects.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,15 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', component: MainComponent }
+    ]
+  },
+  {
+    path: 'projects',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '', component: ProjectsComponent
+      }
     ]
   },
   {

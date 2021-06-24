@@ -10,7 +10,7 @@ export class DepartmentAboutComponent implements OnInit {
   @Input() description: string;
   @Input() head: string;
   @Input() photo: string;
-
+  @Input() title = 'О кафедре';
   constructor() { }
 
   ngOnInit(): void {
