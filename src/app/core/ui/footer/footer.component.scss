@@ -186,6 +186,9 @@
         &:last-child {
           margin-bottom: 20px;
         }
+        &.questions {
+          margin-left: 20px;
+        }
       }
     }
   }
@@ -197,6 +200,9 @@
     &-form {
       input {
         width: calc(100% - 20px);
+        &.questions {
+          margin-left: 0
+        }
       }
     }
   }

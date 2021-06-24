@@ -4,6 +4,10 @@
     display: flex;
   }
 
+  .photo-mobile {
+    display: none;
+  }
+
   .subheader {
     font-style: normal;
     font-weight: 600;
@@ -60,29 +64,89 @@
 @media (max-width: 1650px) {
   .department-about {
     padding: 80px 120px 60px;
+    .text {
+      padding-right: 120px;
+
+      p, h3 {
+        margin-left: 98px;
+      }
+    }
   }
 }
 
 @media (max-width: 1342px) {
   .department-about {
     padding: 60px 100px 60px;
+    .text {
+      padding-right: 100px;
+
+      p, h3 {
+        margin-left: 90px;
+      }
+    }
   }
 }
 
 @media (max-width: 1200px) {
   .department-about {
     padding: 50px 70px 50px;
+    .text {
+      padding-right: 70px;
+
+      p, h3 {
+        margin-left: 70px;
+      }
+    }
+    .photo {
+      min-width: 300px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
 @media (max-width: 850px) {
   .department-about {
     padding: 50px 50px 50px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding-right: 50px;
+
+      p, h3 {
+        margin-left: 65px;
+      }
+    }
+    .photo {
+      display: none;
+    }
+
+    .photo-mobile {
+      margin: 0 auto;
+      display: block;
+      max-width: 200px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
 @media (max-width: 550px) {
   .department-about {
-    padding: 50px 20px 50px;
+    padding: 35px 20px 50px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding-right: 20px;
+
+      p, h3 {
+        margin-left: 25px;
+      }
+    }
   }
 }

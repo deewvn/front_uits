@@ -19,6 +19,8 @@ export class StudentLifeComponent implements OnInit {
     window.addEventListener('resize', () => {
       if (window.innerWidth <= 1420) {
         this.cellsToShow = 1;
+      } else {
+        this.cellsToShow = 3;
       }
     });
   }

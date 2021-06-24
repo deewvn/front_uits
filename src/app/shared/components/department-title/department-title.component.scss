@@ -11,6 +11,9 @@
   color: #fff;
 
   p {
+    display: flex;
+    align-items: center;
+
     margin: 0;
 
     font-style: normal;
@@ -37,32 +40,63 @@
   }
 }
 
+:host ::ng-deep .round::before {
+  margin-right: 26px;
+
+  background-color: #FFFFFF;
+}
+
 @media (max-width: 1650px) {
   .department-title {
-    padding: 180px 120px 60px;
+    p, h4 {
+      margin-left: 120px;
+    }
   }
 }
 
 @media (max-width: 1342px) {
   .department-title {
-    padding: 150px 100px 60px;
+    height: 308px;
+    p, h4 {
+      margin-left: 100px;
+    }
   }
 }
 
 @media (max-width: 1200px) {
   .department-title {
-    padding: 120px 70px 50px;
+    p, h4 {
+      margin-left: 70px;
+    }
   }
 }
 
 @media (max-width: 850px) {
   .department-title {
-    padding: 50px 50px 50px;
+    height: 258px;
+    padding-bottom: 20px;
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    p, h4 {
+      margin-left: 50px;
+      margin-bottom: 15px;
+    }
   }
 }
 
 @media (max-width: 550px) {
   .department-title {
-    padding: 50px 20px 50px;
+    height: 168px;
+    p, h4 {
+      margin-left: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
   }
 }
