@@ -143,6 +143,12 @@
   top: 0;
 }
 
+.relative {
+  .menu__btn > span::after, .menu__btn > span::before, .menu__btn > span {
+    background-color: #8A97A1;
+  }
+}
+
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   right: 0;
