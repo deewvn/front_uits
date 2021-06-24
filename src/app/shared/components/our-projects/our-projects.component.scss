@@ -1,0 +1,182 @@
+.our-projects {
+  padding: 88px 150px 88px;
+
+  background-color: #FAFBFE;
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+
+    &__item {
+      padding-bottom: 32px;
+
+      background-color: #FFFFFF;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h4, p, a {
+        padding: 0 32px;
+      }
+
+      h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        color: #11145D;
+      }
+
+      p {
+        height: 100px;
+
+        margin: 10px 0;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #333333;
+
+        opacity: 0.7;
+      }
+
+      a {
+        margin: 0;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        color: #F33D87;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .our-projects {
+    padding: 80px 120px 60px;
+
+    .project-list {
+      grid-gap: 20px;
+
+      &__item {
+        padding-bottom: 20px;
+
+        h4, p, a {
+          padding: 0 20px;
+        }
+
+        h4 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1342px) {
+  .our-projects {
+    padding: 60px 100px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our-projects {
+    padding: 50px 70px 50px;
+
+    .project-list {
+      grid-gap: 20px;
+
+      &__item {
+        padding-bottom: 20px;
+
+        h4, p, a {
+          padding: 0 20px;
+        }
+
+        h4 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        a {
+          font-size: 10px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .our-projects {
+    padding: 50px 50px 50px;
+    .project-list {
+      grid-template-columns: 1fr;
+      &__item {
+        padding-bottom: 20px;
+
+        h4, p, a {
+          padding: 0 20px;
+        }
+
+        h4 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        p {
+          height: 100px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .our-projects {
+    padding: 35px 20px 50px;
+    .project-list {
+      grid-template-columns: 1fr;
+      &__item {
+        p {
+          height: 150px;
+        }
+      }
+    }
+  }
+}

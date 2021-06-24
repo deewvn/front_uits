@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule } from 'angular-notifier';
 import { ProjectsComponent } from './modules/projects/projects.component';
+import { OurProjectsComponent } from './shared/components/our-projects/our-projects.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProjectsComponent } from './modules/projects/projects.component';
     DepartmentAboutComponent,
     DepartmentAreasComponent,
     UkmtComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    OurProjectsComponent
   ],
   imports: [
     BrowserModule,
