@@ -25,6 +25,7 @@ import { DepartmentAreasComponent } from './shared/components/department-areas/d
 import { UkmtComponent } from './modules/ukmt/ukmt.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NotifierModule } from 'angular-notifier';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NotifierModule
   ],
   providers: [],
   bootstrap: [AppComponent]
