@@ -11,6 +11,8 @@
   background: #E5E5E5;
   background-image: url('/assets/img/vsuet.png'); // fallback
   background: linear-gradient(90deg, rgba(41, 46, 138, 0.9) 0%, rgba(#F33D87, 0.9) 100%), url('/assets/img/vsuet.png');
+
+  z-index: 2;
 }
 
 .title-left {

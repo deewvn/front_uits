@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    z-index: 2;
+
     &__item {
       display: flex;
       flex-direction: column;

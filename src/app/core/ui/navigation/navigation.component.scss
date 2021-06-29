@@ -41,8 +41,9 @@
 
 .navigation-wrapper.relative {
   position: relative;
-  margin-bottom: 32px;
-
+  padding-bottom: 32px;
+  z-index: 2;
+  background-color: #FFFFFF;
   .navigation__link {
     color: #C4C4C4;
 
@@ -165,7 +166,7 @@
   height: 26px;
 
   cursor: pointer;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .menu__btn > span,
@@ -211,6 +212,8 @@
   box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
 
   transition-duration: .25s;
+
+  z-index: 999;
 }
 
 .menu__item {
@@ -311,6 +314,9 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
+    &.relative {
+      padding-bottom: 15px;
+    }
   }
   .navigation__list {
     display: none;

@@ -1,4 +1,6 @@
 .department-title {
+  position: relative;
+
   min-width: 100%;
   height: 368px;
   padding-bottom: 32px;
@@ -9,6 +11,8 @@
   justify-content: flex-end;
 
   color: #fff;
+
+  z-index: 1;
 
   p {
     display: flex;
